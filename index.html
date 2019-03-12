@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+<script>
+var app = angular.module("myShoppingList", []);
+app.controller("myCtrl", function($scope) {
+  $scope.products = ["Milk", "Bread", "Cheese"];
+});
+</script>
+
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+  <ul>
+    <li ng-repeat="x in products">{{x}}</li>
+  </ul>
+</div>
+
+		<h1>Este é um cabeçalho</h1>
+		<p>Este é um paragrafo</p>
+		<p>Este é o segundo paragrafo</p>
+</body>
+</html>
